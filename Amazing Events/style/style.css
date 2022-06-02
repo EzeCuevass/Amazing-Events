@@ -1,0 +1,135 @@
+/* Selector General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    
+}
+/* Header */
+header{
+    height: 25vh;
+}
+#navbarNav{
+    margin-right: 5rem;
+}
+.nav-link{
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    background-color: black;
+    margin: 1vw;
+    color: white;
+}
+.nav-link:hover{
+    color: #e03671;
+}
+nav{
+    background-color: black;
+}
+#container-logo{
+    width: 20vw;
+    height: 8vh;
+    margin-left: 1rem;
+}
+#logo{
+    width: 100%;
+    height: 100%;
+}
+#carouselExampleControls{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    
+}
+h2{
+    text-align: center;
+    margin: 0 auto;
+}
+/* Main */
+.form-check-input{
+    width: 3vw;
+}
+.card{
+    height: 50vh;
+}
+.mains{
+    min-height:65vh;
+}
+#contenedor-checkbox{
+    width: 50%;
+}
+.card-body > h5,p,a{
+    font-size: 0.8rem;
+}
+.card-img-top{
+    height: 28vh;
+}
+#form-contact{
+    width: 70vw;
+    height: 40vh;
+}
+textarea{
+    resize: none;
+}
+table{
+    border: 1px solid black;
+}
+th, td{
+    border: 1px solid black;
+}
+.table-heads{
+    background-color: rgb(168, 168, 168);
+}
+/* Footer */
+footer{
+    height: 10vh;
+    
+}
+.contact-logos{
+    width: 2vw;
+    margin: 0 1vw;
+}
+/* Media queries */
+@media (max-width:992px){
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-toggler{
+        display: none;
+    }
+    .navbar>.container-fluid{
+        flex-wrap: nowrap;
+    }
+    #contenedor-checkbox{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbarNav{
+        margin-right: 0;
+    }
+}
+@media (max-width:1090px){
+    .container-inputs{
+        flex-direction: column-reverse;
+    }
+    #contenedor-checkbox{
+        width: 85%;
+        justify-content: space-around;
+    }
+    header{
+        width: 100%;
+    }
+}
